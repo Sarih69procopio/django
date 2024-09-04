@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">  
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">      
+<title>Meu blog</title>
+    </head>
+    <body>
+        <div>
+            <div class="page-header">
+            <h1><a href="/">Blog da sah fofa</a></h1>
+            <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page"></a>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+        {% for post in posts %}
+        <div>
+            <div class="post">
+                <div class="date">
+            <p>publicado: 14.06.2014, 12:14</p>
+            <h2><a href="">Eu amo ele</a></h2>
+            <p> Interdum complicatus sum (saltem non ementitus sum) miror si condiciones quaedam diversae esse potuissem, multam vitasse potui, sed cum ad motus sum, extra imperium sum, quid facit. amas me? Hoc aliquid nescio, modo scio eum esse mecum. Eum laedere et laedere me in processu cum cogitationibus meis malis, hoc puto ex eo quod mihi familia prope senes est, sane non est quaestio, iustum est quod interdum etiam sine respirare non possum. habente "pressum". Gaudeo me eum habere, scis, etiam si aliquando sugit, sed amat, cur? Beatum me facit, non quod in eo tantum sit mea felicitas, in aliis quoque rebus est, sed is qui me amat et me in unoquoque die amantem relinquit (non modo in diebus occupatis).</p>
+        </div>
+       
+        <div>
+            <p>publicado: 14.06.2014, 12:14</p>
+            <h2><a href="">Eu amo uma pessoa diícil (as vezes)</a></h2>
+            <p>Sempre tento querer saber o que se passa na cabeça dele em certos momentos, pois sou bem fácil de ler, mas por que é tão complicado ler a pessoa que você ama???</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
